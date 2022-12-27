@@ -26,15 +26,15 @@ class StoreChartDataRequest extends FormRequest
         return [
             'userId' => 'required',            
             'chartAmount' => 'required',
-            'chartDate' => 'required',
+            'chartDate' => 'required'
         ];
     }
 
     public function messages()
     {
         return [            
-            'chartAmount.required' => 'Ingresa un Monto.'
-            'chartDate.required' => 'Selecciona una fecha del Calendario.',
+            'chartAmount.required' => "Ingresa un Monto.",
+            'chartDate.required' => "Selecciona una fecha del Calendario."
         ];
     }
 }
